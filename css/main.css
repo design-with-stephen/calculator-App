@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cal-body{
+    width: 350px;
+    height: fit-content;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+}
+.cal-screen{
+    height: 60px;
+    background: #111010;
+    display: flex;
+
+    justify-content: end;
+    border-radius: 5px;
+    align-items: center;
+    color: rgb(255, 155, 24);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.buttons-body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+}
+.button{
+    padding: 10px;
+    border: 2px solid #61616148;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+.equalBtn{
+    grid-column: span 3;
+    background-color: rgb(226, 121, 2);
+}
+.operatorBtn{
+    border: 1px solid orange;
+    color: orange;
+}
+.DeleteBtn{
+    background: red;
+    grid-column: span 2;
+}
+.clearBtn{
+    background-color: orange;
+}
+.screenDigits{
+    float: right;
+    font-size: 2rem;
+}
